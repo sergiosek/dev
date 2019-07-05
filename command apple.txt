@@ -1,0 +1,1 @@
+dseditgroup -o edit -u operador -t user -a alumnos _developer

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSConnectfly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpJ-T2-n64">
+                                <rect key="frame" x="0.0" y="37" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Camerifly" id="Td5-Yk-4fF">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="a7x-7B-Olr">
+                                            <connections>
+                                                <action selector="takeAPhotoAction:" destination="BYZ-38-t0r" id="p4A-oH-v9x"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new image" translatesAutoresizingMaskIntoConstraints="NO" id="WeA-AS-nMk">
+                                <rect key="frame" x="16" y="97" width="382" height="765"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WeA-AS-nMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CEk-Ev-3BL"/>
+                            <constraint firstAttribute="trailing" secondItem="DpJ-T2-n64" secondAttribute="trailing" id="MO5-Gi-0sJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WeA-AS-nMk" secondAttribute="trailing" constant="16" id="Xx9-4L-eGM"/>
+                            <constraint firstItem="DpJ-T2-n64" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-7" id="enR-MG-jhO"/>
+                            <constraint firstItem="DpJ-T2-n64" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gCI-rY-NeK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WeA-AS-nMk" secondAttribute="bottom" id="rZG-xb-KAM"/>
+                            <constraint firstItem="WeA-AS-nMk" firstAttribute="top" secondItem="DpJ-T2-n64" secondAttribute="bottom" constant="16" id="rrv-RL-nkp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="photImamgeView" destination="WeA-AS-nMk" id="6pe-LB-Oud"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="new image" width="444" height="444"/>
+    </resources>
+</document>
